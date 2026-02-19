@@ -1,0 +1,481 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "created_by": "Renascence",
+    "framework": "xFrame · CX Archetype Generator",
+    "last_updated": "2025-02-19",
+    "instructions": "Each industry contains an array of archetypes. To add a new industry, copy the structure of an existing one. To add a new archetype, copy an existing archetype object and update all fields. Radar values are 0–100. CX principle scores are 1–10.",
+    "fields_guide": {
+      "name": "Evocative archetype name, e.g. 'Truth Seekers'",
+      "latin": "Latin motto with English meaning in parentheses",
+      "icon": "Single emoji representing the archetype",
+      "description": "2-3 sentences. Who they are behaviorally. Implied first person: I am…",
+      "goals": "2-3 sentences. What success looks like. I want…",
+      "needs": "2-3 sentences. What they actually do. I do…",
+      "touchpoints": "2-3 sentences. Which channels and why. I use…",
+      "cx_principles.higher_order": "Recognition, Integrity, Expectations, Empathy, Emotions — scored 1–10",
+      "cx_principles.basic_order": "Resolution, Speed, Effort, Enablement, Convenience — scored 1–10",
+      "goals_radar": "9 axes: Recognition, New Image, Future Growth, New Lifestyle, Family Place, Service & Support, Risks & Reassurance, Enablement & Tools, Guidance & Advice",
+      "needs_radar": "8 axes: Information, Content & Inspiration, Offers & Price, Payment Options, Guidance & Advice, Enablement & Tools, Risks & Reassurance, Service & Support",
+      "touchpoints_radar": "8 axes: Online Search, Showrooms, Brand Website, Partner/Broker, Social Media, Aggregators, Community, Word of Mouth",
+      "expectations": "Array of strings — what they expect from the experience",
+      "barriers": "Array of strings — what holds them back",
+      "drivers": "Array of strings — what motivates them",
+      "triggers": "Array of strings — what sets them into motion",
+      "important_steps": "Array of strings — key stages in their journey",
+      "mindset": "Array of strings — personality/attitude traits",
+      "solution_principles": "Array of strings — HTML allowed for <strong> emphasis. Format: 'Because they need X, <strong>the experience must be Y</strong>.'"
+    }
+  },
+  "industries": {
+    "real_estate": {
+      "label": "Real Estate & Property",
+      "description": "Buyers, renters and investors navigating one of life's highest-stakes decisions.",
+      "archetypes": [
+        {
+          "id": "re_home_sweet_home",
+          "name": "Home, Sweet Home",
+          "latin": "Familia Ante Omnia (Family Over All)",
+          "icon": "🏡",
+          "description": "I lead a busy life and one of my key priorities is to take care of my family and its many needs. A property purchase is going to provide security, protection and comfort my family deserves. It's a one-shot decision and I need to be reassured that it will secure my family's future financially and protect its privacy.",
+          "goals": "My goal is to find a home for every family member that will not just be a place to live, but a reward and recognition for us as a family — with a personal touch for every member. Something that will highlight our individualities and bring us together.",
+          "needs": "To reach that goal, I am doing a lot of research, exploration and deal-hunting, for which I need guidance and content. I want to learn more about smart ways of maintaining a better work-life balance and I need personalisation options as important as the community I will be buying in.",
+          "touchpoints": "Friends, agents that I trust, social media and online search are important channels. But even more so it's the opportunity to touch and feel what my future home will look like. I don't want to be rushed, good choice takes time, I want to be perceived as the one who makes the decision — not the developer or agent.",
+          "cx_principles": {
+            "higher_order": {
+              "Recognition": 8,
+              "Integrity": 9,
+              "Expectations": 7,
+              "Empathy": 9,
+              "Emotions": 8
+            },
+            "basic_order": {
+              "Resolution": 7,
+              "Speed": 5,
+              "Effort": 8,
+              "Enablement": 7,
+              "Convenience": 6
+            }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [65, 35, 70, 60, 95, 80, 85, 65, 88],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [80, 75, 45, 70, 88, 70, 82, 65],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [78, 85, 65, 72, 70, 55, 88, 80],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Time management", "Availability", "Clarity on costs", "Location / distance"],
+          "barriers": ["Move-in data", "Availability", "Price", "Location / distance", "Payment options"],
+          "drivers": ["Family", "Distance / Convenience", "Content", "Community"],
+          "triggers": ["Family Security", "Space", "Financial Security"],
+          "important_steps": ["First MOT — Research", "Financing", "Contract Signing", "Living"],
+          "mindset": ["Challenging", "Submissive", "Caring", "Insecure", "Proactive"],
+          "solution_principles": [
+            "Because they need guidance and content to make every family member happy, <strong>the experience must be guided, but full of opportunities for personalisation</strong>.",
+            "Because they need a secure way to finalize the transaction to avoid putting financials at risk, <strong>the experience has to be reassuring and risk-free</strong>.",
+            "Because they need inspiration on how to organize their future home to fulfill the family dreams, <strong>the experience has to be adventurous, creating opportunities to discover and try new things</strong>."
+          ]
+        },
+        {
+          "id": "re_wealth_guardian",
+          "name": "The Wealth Guardian",
+          "latin": "Patrimonium Protego (I Protect the Legacy)",
+          "icon": "🏛️",
+          "description": "I see property not as a home but as a vehicle for wealth preservation and generational transfer. Every decision is filtered through return on investment, capital appreciation and risk mitigation. I am analytical, patient and rarely impressed by aesthetics alone — numbers must speak first.",
+          "goals": "I want to build a portfolio that outlasts market volatility, delivers reliable yield and appreciates over a ten-year horizon. Recognition matters to me as a sophisticated investor, not as a homeowner.",
+          "needs": "I research macroeconomic indicators, track developer track records and compare yield data obsessively. I need transparent financial modelling, off-plan data and direct access to senior advisors who understand investment logic.",
+          "touchpoints": "I rely on financial publications, industry reports, private banking relationships and referrals from trusted investment networks. Showrooms are largely irrelevant — data rooms and one-on-one briefings are where I make decisions.",
+          "cx_principles": {
+            "higher_order": {
+              "Recognition": 9,
+              "Integrity": 10,
+              "Expectations": 8,
+              "Empathy": 5,
+              "Emotions": 3
+            },
+            "basic_order": {
+              "Resolution": 9,
+              "Speed": 7,
+              "Effort": 8,
+              "Enablement": 9,
+              "Convenience": 7
+            }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [88, 30, 95, 25, 20, 70, 90, 85, 80],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [95, 30, 80, 88, 85, 90, 92, 55],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [80, 20, 70, 90, 30, 75, 25, 85],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Transparent yield data", "Developer track record", "Legal clarity", "Dedicated investment advisor"],
+          "barriers": ["Lack of financial transparency", "Unclear exit strategy", "Developer credibility", "Currency and regulatory risk"],
+          "drivers": ["Capital appreciation", "Rental yield", "Portfolio diversification", "Market timing"],
+          "triggers": ["Interest rate shifts", "New master development launch", "Currency opportunity", "Peer portfolio performance"],
+          "important_steps": ["Market research & screening", "Financial due diligence", "Developer briefing", "Contract and SPA review", "Handover and rental setup"],
+          "mindset": ["Analytical", "Risk-conscious", "Patient", "Transactional", "Long-term focused"],
+          "solution_principles": [
+            "Because they need data transparency before trust, <strong>the experience must lead with facts, not feelings — numbers before narratives</strong>.",
+            "Because they fear reputational and financial risk, <strong>the brand must position itself as a credible, track-record-backed partner rather than a sales operation</strong>.",
+            "Because they value time as much as capital, <strong>the journey must eliminate friction and provide senior-level access at every critical decision point</strong>."
+          ]
+        },
+        {
+          "id": "re_status_seeker",
+          "name": "The Status Architect",
+          "latin": "Ostendo Ergo Sum (I Show Therefore I Am)",
+          "icon": "✨",
+          "description": "I purchase property as a statement — of arrival, of taste, of a life well-built. The brand behind the development matters as much as the unit itself. I want what others aspire to, and I want to feel that exclusivity in every interaction from first enquiry to handover.",
+          "goals": "I want a property that elevates my social currency, is photographable, and is located in an address that commands instant recognition. I want the purchase process itself to feel premium — discreet, attentive, and tailored to me personally.",
+          "needs": "I engage with luxury lifestyle media, follow design-forward developers on social channels, and expect white-glove treatment at every touchpoint. I am drawn to limited availability, signature architecture and curated lifestyle amenities.",
+          "touchpoints": "Instagram, architecture publications, luxury lifestyle events and private previews are my primary channels. Word of mouth from peers I respect carries enormous weight. I expect a dedicated relationship manager — not a generic sales agent.",
+          "cx_principles": {
+            "higher_order": {
+              "Recognition": 10,
+              "Integrity": 7,
+              "Expectations": 9,
+              "Empathy": 8,
+              "Emotions": 10
+            },
+            "basic_order": {
+              "Resolution": 6,
+              "Speed": 6,
+              "Effort": 9,
+              "Enablement": 7,
+              "Convenience": 8
+            }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [95, 90, 60, 88, 40, 75, 50, 60, 55],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [60, 90, 35, 70, 65, 65, 45, 90],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [60, 90, 75, 65, 92, 30, 70, 88],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["White-glove service", "Exclusive previews", "Design curation", "Dedicated relationship manager"],
+          "barriers": ["Generic sales approach", "Crowd-sourced availability", "Impersonal communication", "Visible price negotiation"],
+          "drivers": ["Social recognition", "Architectural uniqueness", "Address prestige", "Lifestyle amenities"],
+          "triggers": ["Peer purchase", "Developer brand reputation", "Limited edition launch", "Interior design feature"],
+          "important_steps": ["Discovery & aspiration", "Private preview", "Personalisation selection", "VIP purchase experience", "Brand-led handover"],
+          "mindset": ["Aspirational", "Status-driven", "Emotionally expressive", "Detail-obsessed", "Image-conscious"],
+          "solution_principles": [
+            "Because they buy with emotion and justify with logic, <strong>the experience must engage their sense of self before presenting the product</strong>.",
+            "Because they fear being treated as just another buyer, <strong>every touchpoint must be personalised, named, and curated to feel exclusive</strong>.",
+            "Because they are influenced by peers and aesthetics, <strong>the brand must create shareable, visual, prestige-signalling moments throughout the journey</strong>."
+          ]
+        },
+        {
+          "id": "re_first_timer",
+          "name": "The Brave First-Timer",
+          "latin": "Primum Gressum Facio (I Take the First Step)",
+          "icon": "🗝️",
+          "description": "I am entering the property market for the first time, navigating a world of jargon, paperwork and financial commitment that feels overwhelming. I want to get it right but I am scared of getting it wrong. I need someone to trust, not someone to sell to me.",
+          "goals": "I want to own my first home — a place that is truly mine, that gives me stability and a sense of achievement. I want to feel proud, not fooled. The experience of buying should feel as good as the moment I get the keys.",
+          "needs": "I research extensively online before speaking to anyone. I read forums, watch YouTube walkthroughs and compare mortgage calculators. I need step-by-step guidance, plain-language explanations and reassurance that I am not missing something critical.",
+          "touchpoints": "Google, YouTube, property aggregator apps and Reddit-style community forums are where I spend most of my research time. When I am ready to engage, I need a human — but one who educates rather than pressures. WhatsApp and live chat feel less threatening than formal sales offices.",
+          "cx_principles": {
+            "higher_order": {
+              "Recognition": 6,
+              "Integrity": 10,
+              "Expectations": 8,
+              "Empathy": 10,
+              "Emotions": 9
+            },
+            "basic_order": {
+              "Resolution": 9,
+              "Speed": 6,
+              "Effort": 10,
+              "Enablement": 10,
+              "Convenience": 8
+            }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [50, 65, 75, 80, 60, 90, 88, 85, 95],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [95, 65, 70, 85, 95, 90, 88, 90],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [95, 45, 80, 60, 65, 90, 75, 70],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Plain-language guidance", "No-pressure communication", "Step-by-step process clarity", "Transparent pricing"],
+          "barriers": ["Financial jargon", "Fear of making wrong decision", "Lack of knowledge", "Sales pressure"],
+          "drivers": ["Stability", "Independence", "Financial milestone", "Long-term security"],
+          "triggers": ["Life change (new job, relationship)", "Rent increase", "Peer homeownership", "Interest rate opportunity"],
+          "important_steps": ["Online research phase", "Mortgage pre-approval", "First viewing", "Offer & negotiation", "Legal & completion"],
+          "mindset": ["Anxious", "Hopeful", "Thorough", "Trusting once earned", "Pride-seeking"],
+          "solution_principles": [
+            "Because they are overwhelmed by complexity, <strong>the experience must simplify every step into plain, human language with no assumed knowledge</strong>.",
+            "Because they fear being misled, <strong>integrity must be built into every communication — transparent fees, honest timelines, no hidden conditions</strong>.",
+            "Because the emotional peak is the moment of ownership, <strong>the journey must build towards that milestone with rituals, celebration and genuine care</strong>."
+          ]
+        }
+      ]
+    },
+
+    "banking": {
+      "label": "Banking & Financial Services",
+      "description": "Retail, private and business banking customers navigating trust, complexity and financial wellbeing.",
+      "archetypes": [
+        {
+          "id": "bk_placeholder_1",
+          "name": "The Cautious Planner",
+          "latin": "Tutus Gradatim (Safe, Step by Step)",
+          "icon": "📊",
+          "description": "Placeholder — populate with real insights for Banking & Financial Services.",
+          "goals": "Populate with goals for this archetype in a banking context.",
+          "needs": "Populate with behavioral needs for this archetype.",
+          "touchpoints": "Populate with key channels and touchpoint preferences.",
+          "cx_principles": {
+            "higher_order": { "Recognition": 6, "Integrity": 10, "Expectations": 8, "Empathy": 7, "Emotions": 5 },
+            "basic_order": { "Resolution": 9, "Speed": 7, "Effort": 8, "Enablement": 8, "Convenience": 9 }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [50, 30, 80, 40, 55, 70, 90, 75, 85],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [85, 40, 60, 75, 88, 80, 90, 70],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [80, 20, 85, 60, 35, 70, 30, 65],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Transparent fees", "Fast resolution", "Proactive communication", "Digital-first access"],
+          "barriers": ["Complex products", "Hidden charges", "Slow processes", "Impersonal service"],
+          "drivers": ["Financial security", "Control", "Trust", "Future planning"],
+          "triggers": ["Life event", "Rate change", "Competitor offer", "Financial anxiety"],
+          "important_steps": ["Research", "Account opening", "Onboarding", "First transaction", "Review"],
+          "mindset": ["Cautious", "Detail-oriented", "Security-seeking", "Methodical", "Long-term focused"],
+          "solution_principles": [
+            "Because they need certainty, <strong>every interaction must reduce ambiguity and reinforce trust through transparency</strong>.",
+            "Because they fear financial loss, <strong>the experience must proactively reassure at every high-stakes moment</strong>.",
+            "Because they plan long-term, <strong>the brand must become a genuine financial partner, not just a product provider</strong>."
+          ]
+        }
+      ]
+    },
+
+    "hospitality": {
+      "label": "Hospitality & Tourism",
+      "description": "Travellers and guests seeking escape, experience and emotional connection.",
+      "archetypes": [
+        {
+          "id": "ho_placeholder_1",
+          "name": "The Experience Curator",
+          "latin": "Vita Brevis Ars Longa (Life is Short, Art is Long)",
+          "icon": "🌍",
+          "description": "Placeholder — populate with real insights for Hospitality & Tourism.",
+          "goals": "Populate with goals for this archetype in a hospitality context.",
+          "needs": "Populate with behavioral needs for this archetype.",
+          "touchpoints": "Populate with key channels and touchpoint preferences.",
+          "cx_principles": {
+            "higher_order": { "Recognition": 8, "Integrity": 7, "Expectations": 9, "Empathy": 8, "Emotions": 10 },
+            "basic_order": { "Resolution": 7, "Speed": 8, "Effort": 9, "Enablement": 8, "Convenience": 7 }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [75, 85, 50, 90, 45, 70, 55, 65, 60],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [70, 92, 55, 65, 75, 70, 50, 85],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [85, 30, 70, 55, 90, 75, 65, 80],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Seamless booking", "Personalised welcome", "Authentic local experience", "Responsive service"],
+          "barriers": ["Generic experience", "Poor value perception", "Complicated booking", "Inconsistent service"],
+          "drivers": ["Discovery", "Status & sharing", "Emotional escape", "Cultural immersion"],
+          "triggers": ["Holiday season", "Anniversary or milestone", "Social media inspiration", "Work stress"],
+          "important_steps": ["Inspiration & discovery", "Research & comparison", "Booking", "Pre-arrival", "Stay", "Post-stay"],
+          "mindset": ["Curious", "Emotionally expressive", "Quality-conscious", "Social", "Adventurous"],
+          "solution_principles": [
+            "Because they buy emotion, not rooms, <strong>every touchpoint must be designed to create a feeling, not just complete a function</strong>.",
+            "Because they share experiences, <strong>the brand must create moments worth remembering and worth posting</strong>.",
+            "Because they fear wasted time and money, <strong>the promise must always match or exceed the reality</strong>."
+          ]
+        }
+      ]
+    },
+
+    "healthcare": {
+      "label": "Healthcare & Wellness",
+      "description": "Patients, caregivers and wellness seekers navigating vulnerability, complexity and trust.",
+      "archetypes": [
+        {
+          "id": "hc_placeholder_1",
+          "name": "The Vigilant Advocate",
+          "latin": "Salus Primum (Health First)",
+          "icon": "🏥",
+          "description": "Placeholder — populate with real insights for Healthcare & Wellness.",
+          "goals": "Populate with goals for this archetype in a healthcare context.",
+          "needs": "Populate with behavioral needs for this archetype.",
+          "touchpoints": "Populate with key channels and touchpoint preferences.",
+          "cx_principles": {
+            "higher_order": { "Recognition": 7, "Integrity": 10, "Expectations": 9, "Empathy": 10, "Emotions": 8 },
+            "basic_order": { "Resolution": 10, "Speed": 9, "Effort": 9, "Enablement": 8, "Convenience": 7 }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [60, 40, 70, 65, 75, 90, 92, 80, 95],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [95, 55, 45, 60, 92, 80, 90, 92],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [90, 10, 75, 70, 50, 65, 60, 85],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Clear diagnosis communication", "Short waiting times", "Empathetic staff", "Digital access to records"],
+          "barriers": ["Waiting times", "Communication gaps", "Cost complexity", "Lack of empathy"],
+          "drivers": ["Wellbeing", "Family protection", "Peace of mind", "Control over health"],
+          "triggers": ["Symptoms appear", "Annual check-up", "Life stage change", "Family health event"],
+          "important_steps": ["Symptom research", "Appointment booking", "Consultation", "Treatment", "Recovery & follow-up"],
+          "mindset": ["Anxious", "Protective", "Thorough", "Empathy-seeking", "Proactive"],
+          "solution_principles": [
+            "Because vulnerability is at its peak, <strong>the experience must be warm, human and reassuring at every clinical touchpoint</strong>.",
+            "Because information reduces anxiety, <strong>communication must be proactive, plain-language and never withheld</strong>.",
+            "Because trust is the currency, <strong>every interaction must earn it through consistency, expertise and genuine care</strong>."
+          ]
+        }
+      ]
+    },
+
+    "retail_luxury": {
+      "label": "Luxury Retail & Fashion",
+      "description": "High-value consumers driven by identity, exclusivity and emotional reward.",
+      "archetypes": [
+        {
+          "id": "lx_placeholder_1",
+          "name": "The Identity Collector",
+          "latin": "Habeo Ergo Sum (I Own Therefore I Am)",
+          "icon": "👑",
+          "description": "Placeholder — populate with real insights for Luxury Retail & Fashion.",
+          "goals": "Populate with goals for this archetype in a luxury retail context.",
+          "needs": "Populate with behavioral needs for this archetype.",
+          "touchpoints": "Populate with key channels and touchpoint preferences.",
+          "cx_principles": {
+            "higher_order": { "Recognition": 10, "Integrity": 8, "Expectations": 9, "Empathy": 7, "Emotions": 10 },
+            "basic_order": { "Resolution": 7, "Speed": 7, "Effort": 10, "Enablement": 8, "Convenience": 8 }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [95, 90, 50, 88, 35, 70, 45, 65, 55],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [55, 92, 25, 70, 65, 60, 40, 90],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [55, 92, 80, 60, 90, 20, 70, 85],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Personal stylist access", "Exclusive previews", "Seamless omnichannel", "Post-purchase relationship"],
+          "barriers": ["Generic service", "Crowded retail environment", "Inconsistent brand voice", "Counterfeit anxiety"],
+          "drivers": ["Identity expression", "Social currency", "Craftsmanship appreciation", "Brand heritage"],
+          "triggers": ["New collection drop", "Milestone celebration", "Travel retail opportunity", "Gift occasion"],
+          "important_steps": ["Inspiration discovery", "In-store or private appointment", "Selection experience", "Purchase ritual", "Post-purchase care"],
+          "mindset": ["Aspirational", "Brand-loyal", "Detail-obsessed", "Emotionally invested", "Social"],
+          "solution_principles": [
+            "Because they purchase identity, not product, <strong>the experience must mirror and elevate their self-concept at every moment</strong>.",
+            "Because exclusivity is the product, <strong>the brand must make every customer feel like the only one</strong>.",
+            "Because the ritual matters as much as the item, <strong>the purchase experience must be as considered and crafted as what's inside the box</strong>."
+          ]
+        }
+      ]
+    },
+
+    "automotive": {
+      "label": "Automotive",
+      "description": "Buyers navigating a high-involvement, emotionally charged purchase with both rational and aspirational drivers.",
+      "archetypes": [
+        {
+          "id": "auto_placeholder_1",
+          "name": "The Precision Driver",
+          "latin": "Velocitas et Veritas (Speed and Truth)",
+          "icon": "🚗",
+          "description": "Placeholder — populate with real insights for the Automotive industry.",
+          "goals": "Populate with goals for this archetype in an automotive context.",
+          "needs": "Populate with behavioral needs for this archetype.",
+          "touchpoints": "Populate with key channels and touchpoint preferences.",
+          "cx_principles": {
+            "higher_order": { "Recognition": 7, "Integrity": 9, "Expectations": 8, "Empathy": 6, "Emotions": 8 },
+            "basic_order": { "Resolution": 8, "Speed": 8, "Effort": 8, "Enablement": 9, "Convenience": 8 }
+          },
+          "goals_radar": {
+            "labels": ["Recognition","New Image","Future Growth","New Lifestyle","Family Place","Service & Support","Risks & Reassurance","Enablement & Tools","Guidance & Advice"],
+            "archetype": [70, 75, 60, 80, 45, 65, 70, 85, 65],
+            "average":   [55, 50, 60, 55, 50, 60, 55, 55, 60]
+          },
+          "needs_radar": {
+            "labels": ["Information","Content & Inspiration","Offers & Price","Payment Options","Guidance & Advice","Enablement & Tools","Risks & Reassurance","Service & Support"],
+            "archetype": [90, 60, 75, 70, 65, 85, 70, 70],
+            "average":   [65, 60, 65, 60, 60, 60, 60, 60]
+          },
+          "touchpoints_radar": {
+            "labels": ["Online Search","Showrooms","Brand Website","Partner/Broker","Social Media","Aggregators","Community","Word of Mouth"],
+            "archetype": [88, 80, 78, 55, 65, 70, 50, 75],
+            "average":   [65, 55, 60, 55, 60, 60, 55, 55]
+          },
+          "expectations": ["Knowledgeable staff", "Test drive experience", "Transparent pricing", "Post-sale support"],
+          "barriers": ["High-pressure sales tactics", "Lack of transparency on total cost", "Long delivery times", "Service complexity"],
+          "drivers": ["Performance specifications", "Brand prestige", "Technology features", "Lifestyle fit"],
+          "triggers": ["Current vehicle age", "New model launch", "Lifestyle change", "Finance deal"],
+          "important_steps": ["Online research", "Showroom visit", "Test drive", "Finance discussion", "Order & delivery", "Ownership & service"],
+          "mindset": ["Rational-led", "Performance-conscious", "Brand-aware", "Thorough", "Long-term ownership mindset"],
+          "solution_principles": [
+            "Because the test drive is the moment of truth, <strong>the in-person experience must match the promise of every digital touchpoint that came before it</strong>.",
+            "Because they research before they arrive, <strong>the brand must reward knowledge with transparency, not obfuscation</strong>.",
+            "Because ownership is a relationship, not a transaction, <strong>the post-purchase experience must be as considered as the pre-purchase journey</strong>."
+          ]
+        }
+      ]
+    }
+  }
+}
